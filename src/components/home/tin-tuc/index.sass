@@ -1,0 +1,81 @@
+.home-tin-tuc
+	padding: 100px 0 60px
+	.container
+		position: relative
+	.swiper-container
+		padding: 10px
+	.box-img
+		height: 200px
+		overflow: hidden
+		margin-bottom: 20px
+		img
+			transition: all .3s ease-in-out
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.info
+		padding: 15px
+		padding-top: 0
+	time
+		display: block
+		font-size: 12px
+		color: #999999
+		margin-bottom: 20px
+	.news-item
+		text-align: center
+		transition: all .3s ease-in-out
+		&:hover
+			box-shadow: 0 0 10px 0 rgba(0, 0, 0, .3)
+			.box-img
+				img
+					transform: scale3d(1.1, 1.1, 1.1)
+		h4
+			font-weight: 400
+			overflow: hidden
+			display: -webkit-box
+			text-overflow: ellipsis
+			-webkit-line-clamp: 2
+			-webkit-box-orient: vertical
+	.navigation
+		position: absolute
+		top: 50%
+		z-index: 1
+		left: 0
+		width: 100%
+	.btn-prev, .btn-next
+		color: #ccc
+		font-size: 40px
+		position: absolute
+		transform: translateY(-50%)
+		transition: all .3s ease-in-out
+		outline: none
+		cursor: pointer
+		&:hover
+			color: #FF6700
+	.btn-prev
+		left: -20px
+	.btn-next
+		right: -20px
+	.pagination
+		margin-top: 15px
+		z-index: 1
+		display: flex
+		align-items: center
+		justify-content: center
+		display: none
+	.pagination-bullet
+		width: 10px
+		height: 10px
+		border-radius: 99px
+		background: rgba(#ccc, .5)
+		outline: none
+		&:not(:first-child)
+			margin-left: 10px
+		&.active
+			background: #ff6d00
+	@media (max-width: 991.98px)
+		padding: 30px 0
+		.pagination
+			display: flex
+		.navigation
+			display: none

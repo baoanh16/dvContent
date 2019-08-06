@@ -1,0 +1,56 @@
+.home-doi-tac
+	padding-bottom: 30px
+	.container
+		position: relative
+	.swiper-container
+		border-top: 1px solid #ccc
+	.swiper-wrapper
+		display: flex
+		align-items: center
+	.navigation
+		position: absolute
+		top: 50%
+		z-index: 1
+		left: 0
+		width: 100%
+	.btn-prev, .btn-next
+		color: #ccc
+		font-size: 40px
+		position: absolute
+		transform: translateY(-50%)
+		transition: all .3s ease-in-out
+		outline: none
+		cursor: pointer
+		&:hover
+			color: #FF6700
+	.btn-prev
+		left: -20px
+	.btn-next
+		right: -20px
+	.pagination
+		margin-top: 15px
+		z-index: 1
+		display: flex
+		align-items: center
+		justify-content: center
+		display: none
+	.pagination-bullet
+		width: 10px
+		height: 10px
+		border-radius: 99px
+		background: rgba(#ccc, .5)
+		outline: none
+		&:not(:first-child)
+			margin-left: 10px
+		&.active
+			background: #ff6d00
+	.box-img
+		img
+			display: block
+			margin: 0 auto
+	@media (max-width: 991.98px)
+		padding: 30px 0
+		.pagination
+			display: flex
+		.navigation
+			display: none

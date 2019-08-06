@@ -1,0 +1,79 @@
+.home-tab
+	padding: 60px 0
+	background: url('../img/banner/b-1.png')
+	.container
+		position: relative
+	[class*=col-]
+		padding: 15px 7.5px
+		background: #fff
+		&:first-child
+			padding-left: 15px
+		&:last-child
+			padding-right: 15px
+	.item
+		height: 170px
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 15px
+		color: #fff
+		text-align: center
+		border-radius: 5px
+		box-shadow: 0 4px 7px 0px rgba(0,0,0,.3)
+		transition: all .3s ease-in-out
+		&:hover
+			transform: translateY(-7.5px)
+	.no-gutters
+		overflow: hidden
+		border-radius: 10px
+		background: #fff
+		position: absolute
+		top: -100px
+		left: 0
+		z-index: 1
+		.col-md-4
+			&:nth-child(1)
+				.item
+					background: #7f4c26
+			&:nth-child(2)
+				.item
+					background: #bb5e30
+			&:nth-child(3)
+				.item
+					background: #db9a45
+			&:nth-child(4)
+				.item
+					background: #bea05d
+			&:nth-child(5)
+				.item
+					background: #64909b
+			&:nth-child(6)
+				.item
+					background: #68802d
+	.box-img
+		height: 100px
+		display: flex
+		align-items: center
+		justify-content: center
+	@media (max-width: 991.98px)
+		[class*=col-]
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3)
+				padding-bottom: 7.5px
+			&:nth-child(3)
+				padding-right: 15px
+			&:nth-child(4)
+				padding-left: 15px
+			&:nth-child(4),
+			&:nth-child(5),
+			&:nth-child(6)
+				padding-top: 7.5px
+	@media (max-width: 575.98px)
+		[class*=col-]
+			padding: 15px 7.5px
+			background: #fff
+			&:first-child
+				padding-top: 15px
+			&:last-child
+				padding-buttom: 15px

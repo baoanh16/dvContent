@@ -1,0 +1,19 @@
+section.home-tin-tuc
+	.container
+		h2.title Tin tức
+		.swiper-container
+			.swiper-wrapper
+				-for(i = 0; i < 3; i++)
+					.swiper-slide
+						.news-item
+							.box-img
+								a(href="#")
+									img(src='./img/home/h-3.png', alt='./img')
+							.info
+								time 13/08/2018
+								h4
+									a(href="#") Vai trò của thiết kế trong Content Marketing và những điều Marketer cần biết.
+		.navigation
+			.btn-prev.mdi.mdi-chevron-left
+			.btn-next.mdi.mdi-chevron-right
+		.pagination

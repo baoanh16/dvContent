@@ -1,0 +1,37 @@
+.banner-home
+	position: relative
+	.box-img
+		height: 500px
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.container
+		position: relative
+		margin-top: -250px
+		transform: translateY(-50%)
+	.caption
+		color: #fff
+		font-weight: 300
+		font-size: 24px
+		letter-spacing: 3px
+	.pagination
+		position: absolute
+		bottom: 60px
+		left: 50%
+		transform: translateX(-50%)
+		z-index: 1
+		display: flex
+		align-items: center
+		justify-content: center
+	.pagination-bullet
+		width: 10px
+		height: 10px
+		border-radius: 99px
+		background: rgba(#fff, .5)
+		outline: none
+		&:not(:first-child)
+			margin-left: 10px
+		&.active
+			background: #ff6d00

@@ -1,0 +1,85 @@
+footer
+	padding: 48px 0 0
+	background: url(../img/banner/b-1.png) no-repeat 
+	background-size: cover
+	.top-footer
+		padding-bottom: 40px
+	.box-img
+		margin-bottom: 16px
+	.footer-item
+		color: #666666
+	a
+		display: block
+		margin-bottom: 5px
+	p
+		margin-bottom: 15px
+	h4
+		font-size: 18px
+		color: #333
+		font-weight: 600
+		margin-bottom: 20px
+	.subscribe-container
+		background: #FF6D00
+		padding: 15px 0
+		color: #fff
+		h5
+			font-size: 16px
+			margin-bottom: 5px
+		p
+			font-size: 12px
+		.subscribefrm
+			display: flex
+			font-size: 13px
+			input, button
+				color: #fff
+				background: none
+				border: 1px solid #fff
+				height: 30px
+				outline: none
+				box-shadow: none
+			input
+				width: 100%
+				padding: 0 15px
+				&::placeholder
+					color: #fff
+				border-right: none
+			button
+				flex: 0 0 90px
+				padding: 0 15px
+				cursor: pointer
+	.social-container
+		display: flex
+		align-items: center
+		justify-content: center
+		.item
+			transition: all .3s ease-in-out
+			&:hover
+				transform: scale3d(1.1,1.1,1.1)
+		.item:not(:first-child)
+			margin-left: 15px
+	.copyright
+		background: #212121
+		color: #808080
+		font-size: 13px
+		padding: 15px 0
+		.col-md-6
+			&.d-flex
+				flex-wrap: wrap
+			p, a
+				margin: 0
+			a:not(:last-child)
+				margin-right: 15px
+	@media (max-width: 991.98px)
+		padding-top: 30px
+		.footer-item, 
+		.social-container
+			margin-top: 15px
+		.subscribe-container
+			margin-top: 30px
+		.link
+			a
+				margin-bottom: 10px
+		.copyright
+			.col-md-6
+				&.d-flex
+					margin-bottom: 15px
